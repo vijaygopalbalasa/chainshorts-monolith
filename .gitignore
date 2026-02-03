@@ -1,0 +1,33 @@
+node_modules
+dist
+builds/
+# Allow compiled shared package so EAS build can access @chainshorts/shared
+!packages/shared/dist
+# Allow compiled predictions worker for Railway deployment
+!workers/predictions/dist
+workers/helius/dist
+.env
+.env.*
+!.env.example
+.env.railway
+.expo
+.expo-shared
+.next
+coverage
+.DS_Store
+npm-debug.log*
+*.tsbuildinfo
+supabase/.temp
+apps/mobile/credentials.json
+*.jks
+publishing/.env
+publishing/files
+publishing/media
+publishing/dapp-store-build
+publishing/dapp-store-signing-keys
+# publishing/config.yaml — tracked (contains on-chain app/release NFT addresses, no secrets)
+*.keystore
+# Root app.json is a placeholder — actual config is in apps/mobile/app.json
+/app.json
+.playwright-mcp/
+apps/mobile/google-services.json

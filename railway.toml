@@ -1,0 +1,8 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install && npm run --workspace packages/shared build && npm run --workspace apps/api build && npm run --workspace workers/ingest build && npm run --workspace workers/helius build && npm run --workspace workers/predictions build"
+
+[deploy]
+startCommand = "node $RAILWAY_START_FILE"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5

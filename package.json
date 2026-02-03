@@ -1,0 +1,42 @@
+{
+  "name": "chainshorts",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "workers/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "start:predictions": "npm run --workspace @chainshorts/predictions-worker start",
+    "dev:api": "npm run --workspace @chainshorts/api dev",
+    "dev:worker": "npm run --workspace @chainshorts/ingest-worker dev",
+    "dev:helius": "npm run --workspace @chainshorts/helius-worker dev",
+    "dev:predictions": "npm run --workspace @chainshorts/predictions-worker dev",
+    "adb:reverse": "bash ./scripts/adb-reverse-api.sh",
+    "adb:install": "bash ./scripts/adb-install-apk.sh",
+    "test": "npm run --workspace @chainshorts/shared build && npm run -ws test",
+    "lint": "npm run --workspace @chainshorts/shared build && npm run -ws lint",
+    "typecheck": "npm run --workspace @chainshorts/shared build && npm run -ws typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "expo": "54.0.33",
+    "@expo/dom-webview": "0.2.8",
+    "@expo/vector-icons": {
+      "expo-font": "14.0.11"
+    },
+    "minimatch": "10.2.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
