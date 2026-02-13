@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// EAS build compatibility: EAS credential injection replaces gradle.properties, stripping
+// android.useAndroidX=true. Set it on all projects BEFORE their build scripts run so AGP
+// finds it during plugin application. Must come before buildscript block.
+allprojects {
+    if (!project.hasProperty('android.useAndroidX') || project.findProperty('android.useAndroidX') != 'true') {
+        project.ext.set('android.useAndroidX', 'true')
+    }
+}
+
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+  dependencies {
+    classpath('com.android.tools.build:gradle')
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://www.jitpack.io' }
+  }
+}
+
+apply plugin: "expo-root-project"
+apply plugin: "com.facebook.react.rootproject"

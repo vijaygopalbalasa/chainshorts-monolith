@@ -1,0 +1,51 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "dapp-store": {
+      "credentialsSource": "remote",
+      "environment": "production",
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://api.chainshorts.live",
+        "EXPO_PUBLIC_SOLANA_CHAIN": "solana:mainnet",
+        "EXPO_PUBLIC_PRIVACY_POLICY_URL": "https://chainshorts.live/privacy-policy",
+        "EXPO_PUBLIC_ADVERTISER_PORTAL_URL": "https://advertiser.chainshorts.live",
+        "EXPO_PUBLIC_PLATFORM_WALLET": "E91HyJ9X4qLZnsHMATjcvTbDH8KWBirws8vHtGLiqwYa",
+        "EXPO_PUBLIC_SKR_MINT": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+        "EXPO_PUBLIC_EAS_PROJECT_ID": "bc0f9cbe-cc57-447f-8a4a-b0041040a8ab",
+        "EXPO_PUBLIC_JUPITER_FEE_ACCOUNT_USDC": "ZumpZ7jcXDXY6fNf1pDmRSagkg7ewbh1ja4H3uqcMWC",
+        "EXPO_PUBLIC_JUPITER_FEE_ACCOUNT_USDT": "HFvzjCMVQf1bb7oAheg5zAr7eHXdGzFSX9KXB6eCHqqs",
+        "EXPO_PUBLIC_JUPITER_FEE_ACCOUNT_SKR": "9MWtPqPDytuGDpUdTE4mw4cwHntVNHwaodm8HzfYQ4Cy",
+        "EXPO_PUBLIC_JUPITER_FEE_ACCOUNT_SOL": "9XXgVgf7UbQXXFYtTdWAB8TYsxD7eKkVgABxEzdKWed9",
+        "EXPO_PUBLIC_SOLANA_RPC_URL": "https://api.chainshorts.live/v1/rpc"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

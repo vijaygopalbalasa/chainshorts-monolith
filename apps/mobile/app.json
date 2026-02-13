@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Chainshorts",
+    "slug": "chainshorts",
+    "scheme": "chainshorts",
+    "version": "1.4.1",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#070B0F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chainshorts.app"
+    },
+    "android": {
+      "package": "com.chainshorts.app",
+      "versionCode": 5,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#070B0F"
+      }
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/adaptive-icon.png",
+          "color": "#14F195",
+          "defaultChannel": "default"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#070B0F",
+          "image": "./assets/icon.png",
+          "imageWidth": 250
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "extra": {
+      "apiBaseUrl": "${EXPO_PUBLIC_API_BASE_URL}",
+      "solanaChain": "${EXPO_PUBLIC_SOLANA_CHAIN}",
+      "privacyPolicyUrl": "${EXPO_PUBLIC_PRIVACY_POLICY_URL}",
+      "eas": {
+        "projectId": "bc0f9cbe-cc57-447f-8a4a-b0041040a8ab"
+      }
+    },
+    "owner": "vijaygopalbalasa"
+  }
+}
