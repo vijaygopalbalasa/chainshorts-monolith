@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[build.builder_config]
+installCommand = "npm install"
+buildCommand = "npm run --workspace packages/shared build && npm run --workspace workers/predictions build"
+
+[deploy]
+startCommand = "npm run --workspace @chainshorts/predictions-worker start"
