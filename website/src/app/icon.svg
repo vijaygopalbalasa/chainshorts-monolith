@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="56" fill="#0D1117"/>
+  <!-- Cyan vertical bar -->
+  <rect x="88" y="72" width="22" height="112" rx="2" fill="#00D4FF"/>
+  <!-- Green play triangle -->
+  <polygon points="100,72 188,128 100,184" fill="#14F195"/>
+</svg>

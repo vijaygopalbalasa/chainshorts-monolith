@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.chainshorts.app",
+      "sha256_cert_fingerprints": [
+        "83:75:82:A5:1D:7C:40:03:E5:95:6F:C4:71:E6:33:73:20:91:49:E3:C0:E7:9C:67:9A:E8:95:64:8B:77:C2:E1"
+      ]
+    }
+  }
+]
