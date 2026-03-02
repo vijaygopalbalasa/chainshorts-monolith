@@ -1,0 +1,82 @@
+publisher:
+  name: Chainshorts
+  website: https://chainshorts.live
+  email: balasavijaytheking@gmail.com
+  support_email: support@chainshorts.live
+  address: EsRePghTAuFPytYEdEPha3bv1gTPtG1dovT3sRYMNgk9
+app:
+  name: Chainshorts
+  address: CFByJx34Gjn1jpnFwEsDRxzfaG2mFMvswkX7QkLjDaRK
+  android_package: com.chainshorts.app
+  urls:
+    license_url: https://chainshorts.live/terms
+    copyright_url: https://chainshorts.live/terms
+    privacy_policy_url: https://chainshorts.live/privacy-policy
+    website: https://chainshorts.live
+  media:
+    - purpose: icon
+      uri: media/app-icon-512.png
+release:
+  address: 9VXv2KGhXKoB355NLmhik1T5zf9cfeAzPgTKzVZbevpZ
+  media:
+    - purpose: icon
+      uri: media/release-icon-512.png
+    - purpose: banner
+      uri: media/banner-1200x600.png
+    - purpose: featureGraphic
+      uri: media/feature-1200x1200.png
+    - purpose: screenshot
+      uri: media/screenshot-1.png
+    - purpose: screenshot
+      uri: media/screenshot-2.png
+    - purpose: screenshot
+      uri: media/screenshot-3.png
+    - purpose: screenshot
+      uri: media/screenshot-4.png
+  files:
+    - purpose: install
+      uri: files/chainshorts-dapp-store.apk
+  catalog:
+    en-US:
+      name: Chainshorts
+      short_description: 60-word Web3 news. Earn $SKR.
+      long_description: |-
+        Chainshorts is the fastest way to stay on top of Web3 — every story from 26+ top crypto sources condensed to exactly 60 words. No fluff, no paywalls, no information overload. Just the signal.
+
+        Browse the live news feed by category, search any topic, and bookmark stories to read later — no wallet required to start.
+
+        Connect your Seeker wallet to unlock the full experience. Stake $SKR tokens on live YES/NO prediction markets tied to real crypto events. Track your open and resolved stakes in the Portfolio tab. Claim your winnings after the 48-hour settlement window, or exit any open stake early with a small penalty.
+
+        Climb the Leaderboard sorted by profit, win rate, or volume — across all time, this week, or this month. See your rank highlighted inline alongside the top performers.
+
+        Swap SOL, USDC, USDT, or $SKR directly inside the app via Jupiter — no need to leave Chainshorts to manage your tokens.
+
+        The $SKR tier system gates exclusive features: Signal tier at 100 SKR, Alpha tier at 500 SKR, Pro tier at 2000 SKR. Hold more $SKR to unlock deeper access.
+      new_in_version: Full prediction market system — stake $SKR on live YES/NO markets, track open and resolved positions in the Portfolio tab, and claim payouts after the 48-hour settlement window. Early cashout available with a small penalty. Dispute system to challenge incorrect outcomes with a 50 $SKR deposit and 48-hour challenge window. Leaderboard with profit, win rate, and volume sorting across all time, this week, or this month. Jupiter in-app swap for SOL, USDC, USDT, and $SKR. Wallet-native reactions with Ed25519 signatures.
+      saga_features: All wallet interactions are handled through Mobile Wallet Adapter with Seed Vault — private keys never leave the secure enclave. Sign-In With Solana (SIWS) authenticates using an Ed25519 signature with no password or seed phrase exposure. Every on-chain action — SKR staking, early cashout, payout claim, dispute deposit, and Jupiter swap — is signed through MWA with Seed Vault on the Seeker device.
+  android_details:
+    cert_fingerprint: 837582a51d7c4003e5956fc471e63373209149e3c0e79c679ae895648b77c2e1
+    min_sdk: 24
+    version: 1.4.0
+    version_code: 1
+    locales:
+      - en-US
+solana_mobile_dapp_publisher_portal:
+  google_store_package: com.chainshorts.app
+  testing_instructions: |-
+    1. Open the app — the news feed loads immediately with no login required. Browse 60-word news cards, filter by category (DeFi, NFTs, Markets, etc.), or use the search bar.
+    2. Swipe right on any card to bookmark it. Tap the Saved tab to view your bookmarks.
+    3. Tap the Wallet tab, then Connect Wallet. Sign in using Seed Vault via Mobile Wallet Adapter. Your $SKR balance and tier will display once connected.
+    4. Tap the Predict tab to view live YES/NO prediction markets. Tap any market, enter an SKR amount, and tap Stake YES or Stake NO. The transaction is signed via Seed Vault.
+    5. Tap the Portfolio tab to view your open stakes and resolved positions.
+    6. On a resolved stake that has passed the 48-hour settlement window, tap Claim Payout to receive SKR — signed via Seed Vault.
+    7. To test early cashout, tap Cash Out on an active stake. A 5% penalty applies and a minimum of 10 SKR is required.
+    8. Tap the Wallet tab then Swap to test Jupiter. Select input and output tokens (SOL, USDC, USDT, or SKR), review the quote, and confirm via Seed Vault.
+    9. Tap the Leaderboard tab to view rankings by profit, win rate, or volume. Your own wallet row is highlighted inline.
+  alpha_testers: []
+lastSubmittedVersionOnChain:
+  address: 9VXv2KGhXKoB355NLmhik1T5zf9cfeAzPgTKzVZbevpZ
+  version_code: 1
+  apk_hash: xZlZo3tqSo7PeDmfv8+yUAEGNuosSNSPsjElfPOt8EI=
+lastUpdatedVersionOnStore:
+  address: 9VXv2KGhXKoB355NLmhik1T5zf9cfeAzPgTKzVZbevpZ

@@ -1,0 +1,49 @@
+{
+  "assets": {
+    "media/app-icon-512.png": {
+      "path": "media/app-icon-512.png",
+      "sha256": "fSeElGFAlY4FRCt3xuZxhr6Dr7Zz7/OQz8Jw931sNmU=",
+      "uri": "https://arweave.net/Jk397qLgKXi7i1YhGv3o4n5NU6-ug2eQx8qJLH1-OVg"
+    },
+    "files/chainshorts-dapp-store.apk": {
+      "path": "files/chainshorts-dapp-store.apk",
+      "sha256": "xZlZo3tqSo7PeDmfv8+yUAEGNuosSNSPsjElfPOt8EI=",
+      "uri": "https://arweave.net/VOKdXqLHtmvccdNAGv3dwCZtbZ8DStgeY5m73EtgMno"
+    },
+    "media/release-icon-512.png": {
+      "path": "media/release-icon-512.png",
+      "sha256": "fSeElGFAlY4FRCt3xuZxhr6Dr7Zz7/OQz8Jw931sNmU=",
+      "uri": "https://arweave.net/Jk397qLgKXi7i1YhGv3o4n5NU6-ug2eQx8qJLH1-OVg"
+    },
+    "media/banner-1200x600.png": {
+      "path": "media/banner-1200x600.png",
+      "sha256": "5kpK+G+0rz8+4HVI31E7QF+62TJClwDV2SqrwFMMH/U=",
+      "uri": "https://arweave.net/NJ_VNHianf7KGTHaFHhHlLDgg9qpUWBIlYLUeV6J8v4"
+    },
+    "media/feature-1200x1200.png": {
+      "path": "media/feature-1200x1200.png",
+      "sha256": "FH3ju/FCN7xqOMjFrIeKaBeN1EJJ2TSdkn16eAfeeKo=",
+      "uri": "https://arweave.net/LLcQQnt87PwI4yyLYFWNSvq8klTDds6p6tQc1utnAbA"
+    },
+    "media/screenshot-1.png": {
+      "path": "media/screenshot-1.png",
+      "sha256": "WEm7tlZ8KqqEamMxZEeACFE+S1FoeVa7G4AQ4gM942M=",
+      "uri": "https://arweave.net/q6_eJl1KgccWQLFLJB3bqi8h_H2Hy4PWN6GpRERMS4s"
+    },
+    "media/screenshot-2.png": {
+      "path": "media/screenshot-2.png",
+      "sha256": "P2KZQk693Wp84RRsX2NSiHCJNkcsEZZeE2oF/B78xTs=",
+      "uri": "https://arweave.net/RBi6IfPqEnErxB3HVieOPOf1c23UMe_n3QQ2WfAiEWw"
+    },
+    "media/screenshot-3.png": {
+      "path": "media/screenshot-3.png",
+      "sha256": "NXrzpNOmVBuUBAWwMpDArsOqFS7jtNeBx8PefEDQWD0=",
+      "uri": "https://arweave.net/UPjSnxrmwkVWNdzbIj3p8ASDp3GxiWH-HeixsJqGB80"
+    },
+    "media/screenshot-4.png": {
+      "path": "media/screenshot-4.png",
+      "sha256": "Bqnnd1fM1esgBW7oH9LqX2dtuHJzPvtkSMKAn8rpBOw=",
+      "uri": "https://arweave.net/yikOAWry4bFij64y1KUQh7dl6194B_SwcJSVkjNRSU8"
+    }
+  }
+}

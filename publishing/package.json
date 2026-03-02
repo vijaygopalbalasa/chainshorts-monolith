@@ -1,0 +1,21 @@
+{
+  "name": "chainshorts-publishing",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "init": "npx --yes @solana-mobile/dapp-store-cli@latest init",
+    "validate": "bash ./scripts/validate.sh",
+    "validate:local": "SKIP_DAPP_STORE_CLI=1 bash ./scripts/validate.sh",
+    "create:app": "bash ./scripts/create-app.sh",
+    "create:release": "bash ./scripts/create-release.sh",
+    "publish:submit": "bash ./scripts/publish-submit.sh",
+    "publish:update": "bash ./scripts/publish-update.sh",
+    "build": "echo \"No build step for publishing workspace\"",
+    "test": "echo \"No tests for publishing workspace\"",
+    "lint": "echo \"No lint step for publishing workspace\"",
+    "typecheck": "echo \"No typecheck step for publishing workspace\""
+  },
+  "devDependencies": {
+    "@solana-mobile/dapp-store-cli": "^0.15.0"
+  }
+}

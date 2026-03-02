@@ -1,0 +1,9 @@
+node_modules
+dist
+builds
+.git
+*.log
+publishing
+apps/advertiser/.next
+apps/mobile
+website/.next

@@ -1,0 +1,66 @@
+publisher:
+  name: <<CHAINSHORTS_PUBLISHER_NAME>>
+  website: <<https://publisher.example.com>>
+  email: <<publisher@example.com>>
+  support_email: <<support@example.com>>
+
+app:
+  name: Chainshorts
+  address: ""
+  android_package: com.chainshorts.app
+  urls:
+    license_url: <<https://chainshorts.live/terms>>
+    copyright_url: <<https://chainshorts.live/terms>>
+    privacy_policy_url: <<https://chainshorts.live/privacy-policy>>
+    website: <<https://chainshorts.live>>
+  media:
+    - purpose: icon
+      uri: media/app-icon-512.png
+
+release:
+  address: ""
+  media:
+    - purpose: icon
+      uri: media/release-icon-512.png
+    - purpose: banner
+      uri: media/banner-1200x600.png
+    - purpose: featureGraphic
+      uri: media/feature-1200x1200.png
+    - purpose: screenshot
+      uri: media/screenshot-1.png
+    - purpose: screenshot
+      uri: media/screenshot-2.png
+    - purpose: screenshot
+      uri: media/screenshot-3.png
+    - purpose: screenshot
+      uri: media/screenshot-4.png
+    - purpose: video
+      uri: media/preview.mp4
+  files:
+    - purpose: install
+      uri: files/chainshorts-v1.0.0-signed.apk
+  catalog:
+    en-US:
+      name: Chainshorts
+      short_description: >-
+        60-word crypto intelligence.
+      long_description: >-
+        Chainshorts delivers crypto market briefings in exactly 60 words with
+        source attribution, wallet-verified actions, and prediction markets.
+      new_in_version: >-
+        Initial release with feed, prediction markets, wallet auth, and sponsored inventory.
+      saga_features: >-
+        Mobile Wallet Adapter login and Seed Vault transaction flows.
+  android_details:
+    locales:
+      - en-US
+
+solana_mobile_dapp_publisher_portal:
+  google_store_package: com.chainshorts.app
+  testing_instructions: >-
+    Use guest mode for browsing. For wallet flows use Seed Vault on a Seeker device.
+    Connect wallet from Wallet tab, then test reaction signing, prediction staking,
+    and payout visibility.
+  alpha_testers:
+    - address: <<OPTIONAL_GENESIS_WALLET_1>>
+      comment: <<optional>>
