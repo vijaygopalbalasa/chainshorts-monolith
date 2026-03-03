@@ -99,9 +99,6 @@ SKR is the economic backbone — not a badge:
 
 | Feature | SKR Role |
 |---------|----------|
-| Signal tier | Hold 100 SKR |
-| Alpha tier | Hold 500 SKR |
-| Pro tier | Hold 2,000 SKR |
 | Prediction staking | Stake SKR on YES / NO outcomes |
 | Prediction payouts | Automated on-chain SKR transfer to winners |
 | Early cashout penalty | 5% fee collected in SKR |
