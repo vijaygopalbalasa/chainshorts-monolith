@@ -103,7 +103,6 @@ SKR is the economic backbone — not a badge:
 | Prediction payouts | Automated on-chain SKR transfer to winners |
 | Early cashout penalty | 5% fee collected in SKR |
 | Dispute deposit | 50 SKR to challenge a market resolution |
-| Content boosts | Spend SKR to surface articles |
 | Jupiter swap fee | 1% of every swap → platform wallet |
 
 Every action in the app touches SKR. Removing it would break the product.
