@@ -118,7 +118,7 @@ chainshorts/
 │   ├── api/          Fastify 5 API (Node 20, TypeScript ESM, 55 DB migrations)
 │   └── advertiser/   Next.js 16 advertiser portal (Vercel)
 ├── workers/
-│   ├── ingest/       RSS ingestion + 4-stage processing pipeline (5-min intervals)
+│   ├── ingest/       RSS ingestion + automated summarization (5-min intervals)
 │   ├── predictions/  Market generation + resolution (15-min intervals)
 │   └── helius/       On-chain transfer monitoring via Helius webhooks
 ├── packages/
@@ -145,7 +145,7 @@ chainshorts/
 ## Prediction Markets — Technical Detail
 
 - Markets generated continuously from live news events
-- 3-agent consensus resolution system with confidence-based early exit
+- Automated resolution system with multi-source verification and confidence scoring
 - Atomic CAS payout claim: `transfer_status = 'in_progress'` + `ON CONFLICT DO NOTHING` — zero double-claims possible
 - `UNIQUE(stake_id)` enforces exactly one payout per stake at the DB level
 - 48-hour claim delay enforced via `claimable_at` column — prevents instant drain
@@ -182,7 +182,7 @@ chainshorts/
 |-------|-------------|
 | Mobile | React Native 0.81.4, Expo 54, MWA, Solana web3.js, Jupiter SDK |
 | API | Fastify 5, TypeScript ESM, PostgreSQL, tweetnacl, @solana/spl-token |
-| Workers | Node 20, OpenRouter (multi-model), RSS parsing, Helius webhooks |
+| Workers | Node 20, RSS parsing, Helius webhooks |
 | Infrastructure | Railway, Vercel, EAS, Solana Mainnet via Helius RPC |
 
 ---
@@ -192,7 +192,7 @@ chainshorts/
 ### API
 ```bash
 cd apps/api
-cp .env.example .env      # add DATABASE_URL, OPENROUTER_API_KEY, etc.
+cp .env.example .env      # add DATABASE_URL and other required vars
 npm install && npm run dev
 ```
 
